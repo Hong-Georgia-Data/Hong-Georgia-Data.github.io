@@ -2,7 +2,22 @@
 body {
   background: rgba(105, 103, 103, 0.164)
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
 
+.container:hover .overlay {
+  opacity: 1;
+}
 
 $grid-columns:      12;
 $grid-gutter-width: 30px;
@@ -26,6 +41,13 @@ $container-max-widths: (
   lg: 960px,
   xl: 1140px
 );
+
+    /* @media (max-width: 1026px) {
+        #test(some id) {
+            display: none;
+        }
+    } */
+
 /* h2,{
   style="font-family:'Gill Sans'";
   display: block;
