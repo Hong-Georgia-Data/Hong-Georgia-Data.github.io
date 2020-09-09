@@ -57,34 +57,31 @@
 </header>
 <div class="table-responsive-sm">
     <table class="table">
+        <table datasrc='#data' id="table1">
+
+            <thead>
+            <tr><th>Cities</th><th>Country</th><th>Date</th><th>Cloudiness</th><th>Humidity</th><th>Latitude</th><th>Longtitude</th><th>Max Temperature</th><th>Windspeed</th></tr>
+            </thead>
+            <tbody>
+            <td><span datafld='Cities'> </span></td>
+            <td><span datafld='Country'></span></td>
+            <td><span datafld='Date'> </span></td>
+            <td><span datafld='Cloudiness'> </span></td>
+            <td><span datafld='Humidity'> </span></td>
+            <td><span datafld='Latitude'> </span></td>
+            <td><span datafld='Longtitude'> </span></td>
+            <td><span datafld='Max Temperature'> </span></td>
+            <td><span datafld='Windspeed'> </span></td>
+            </tbody>
+            
+            </table>
+            
     </table>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js"></script>
-<script>
-    function arrayToTable(tableData) {
-        var table = $('<table></table>');
-        $(tableData).each(function (i, rowData) {
-            var row = $('<tr></tr>');
-            $(rowData).each(function (j, cellData) {
-                row.append($('<td>'+cellData+'</td>'));
-            });
-            table.append(row);
-        });
-        return table;
-    }
 
-    $.ajax({
-        type: "GET",
-        url: "Resources/cities.csv",
-        success: function (data) {
-            $('body').append(arrayToTable(Papa.parse(data).data));
-        }
-    });
-</script>
 
 </body>
 </html>
