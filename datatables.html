@@ -48,34 +48,15 @@
 <!-- Home -->
      <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="datatables.html">data</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Data Tables</li>
+        <li class="breadcrumb-item"><a href="datatables.html">Data Table</a></li>
+        <li class="breadcrumb-item active" aria-current="page">8-25-2020</li>
     
       </ol>
     </nav>
 
 </header>
 <div class="table-responsive-sm">
-    <table class="table">
-        <table datasrc='Resources/cities.csv' id="table1">
-
-            <thead>
-            <tr><th>Cities</th><th>Country</th><th>Date</th><th>Cloudiness</th><th>Humidity</th><th>Latitude</th><th>Longtitude</th><th>Max Temperature</th><th>Windspeed</th></tr>
-            </thead>
-            <tbody>
-            <td><span datafld='Cities'> </span></td>
-            <td><span datafld='Country'></span></td>
-            <td><span datafld='Date'> </span></td>
-            <td><span datafld='Cloudiness'> </span></td>
-            <td><span datafld='Humidity'> </span></td>
-            <td><span datafld='Latitude'> </span></td>
-            <td><span datafld='Longtitude'> </span></td>
-            <td><span datafld='Max Temperature'> </span></td>
-            <td><span datafld='Windspeed'> </span></td>
-            </tbody>
-            
-            </table>
-            
+    <table class="table" datasrc='Resources/cities.csv'>            
     </table>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
