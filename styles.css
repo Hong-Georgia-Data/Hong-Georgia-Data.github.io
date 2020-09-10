@@ -15,6 +15,19 @@ body {
   background-color: #008CBA;
 }
 
+
+@media only screen and (max-width: 992px) {
+  .vertical-menu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+#sider {
+  display: none;}}
+@media only screen and (max-width: 992px) {
+    #disp {
+      display: none;}}
+
 .container:hover .overlay {
   opacity: 1;
 }
@@ -56,8 +69,8 @@ $container-max-widths: (
     color: #f1f1f1;
   }
   .vertical-menu a {
-   margin-left: 2pc;
-    
+   margin-left: 1pc;
+   margin-right: 1pc;
   }
 
   .vertical-menu a {
@@ -66,7 +79,12 @@ $container-max-widths: (
     display: block; /* Make the links appear below each other */
     padding: 12px; /* Add some padding */
     text-decoration: none; /* Remove underline from links */
-    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    margin-left: 1pc;
+    margin-right: 1pc;
   }
   
   .vertical-menu a:hover {
@@ -76,7 +94,34 @@ $container-max-widths: (
   .vertical-menu a.active {
     background-color: #4CAF50; /* Add a green color to the "active/current" link */
     color: white;
+    border: 1px solid #007;
+    resize: both;
+    overflow:scroll;
+  
+   display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
   }
+  
+  .vertical-menu {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+
+  }
+ #disp {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+
+  }
+
+  .h3 {
+    position: relative;
+    max-height: 2px;
+
+  }
+
     /* @media (max-width: 1026px) {
         #test(some id) {
             display: none;
