@@ -128,15 +128,21 @@ $container-max-widths: (
           display:flex-direction: row-reverse;
         }
       }
+@media only screen and (max-width: 720px) {
+        #bio-image {
+          display: none;
+        }
+      }
+      
 
-      @media only screen and (max-width: 1200px) {
+      /* @media only screen and (max-width: 1200px) {
         #disp {
           display:none;}}
     @media only screen and (max-width: 1200px) {
             .vertical-menu {
               display: none;
             }
-          }
+          } */
 
     /* @media (max-width: 1026px) {
         #test(some id) {
