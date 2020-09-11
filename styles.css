@@ -61,12 +61,12 @@ $container-max-widths: (
   .sidenav a:hover, .dropdown-btn:hover {
     color: #f1f1f1;
   }
-  .vertical-menu a {
+  .vertical-menu a{
    margin-left: 1pc;
    margin-right: 1pc;
   }
 
-  .vertical-menu a {
+  .vertical-menu a{
     background-color: #eee; /* Grey background color */
     color: black; /* Black text color */
     display: block; /* Make the links appear below each other */
@@ -79,8 +79,9 @@ $container-max-widths: (
     margin-left: 1pc;
     margin-right: 1pc;
   }
+
   
-  .vertical-menu a:hover {
+.vertical-menu a:hover {
     background-color: #ccc; /* Dark grey background on mouse-over */
   }
   
@@ -95,7 +96,15 @@ $container-max-widths: (
     flex-flow: row wrap;
     align-items: stretch;
   }
-  
+  .vertical-menu p{
+    position: relative;
+    width: 100%;
+    min-width: 20%;
+    max-width: 100%;
+
+    /* min-height: 1px; */
+
+  }
   .vertical-menu {
     position: relative;
     width: 100%;

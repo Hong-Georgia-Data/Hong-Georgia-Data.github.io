@@ -77,25 +77,26 @@
     <!-- .ml-sm-auto -->
     <br>    <br>    
     <div id='disp' class="row" style ='margin-left: 1pc;background-color: #fff;max-width:240px;max-height:auto;'>
-      <div class="row" style='max-width:240px;max-height:auto;'>    
+      <!-- <div class="row" style='max-width:240px;max-height:auto;'>     -->
         <h3 style="font-family:'Segoe UI'; 
-           font-size: 24px; color: rgb(107, 100, 211); margin-left: 2pc;margin-right: 2pc;font-size:100%;"><br>CONTENTS</h3>
+            color: rgb(107, 100, 211); margin-left: 2pc;margin-right: 0pc;font-size:24px; text-align: left;"><br>CONTENTS</h3>
            <!-- <div class="row"> -->
-          </div>
+          <!-- </div> -->
 
     <div class="vertical-menu" style="margin-bottom: 2pc;">
             <!-- <div class="row" style="margin-left: 2pc; margin-bottom: 0pc;"> -->
-              <h3 style="font-family:'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;  
-          font-weight: bolder; font-size: 16px; color: #6c757d; margin-left: 2pc;margin-right: 2pc;font-size:100%">Max Temperature</h3>
+              <p style="font-family:'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;  
+          font-weight: bolder; color: #6c757d; margin-left: 2pc;margin-right: 0pc;font-size:100%">Max Temperature</p>
              <!-- <ul class="nav nav-pills flex-column" style="margin-bottom: 0.5pc;"><li class="nav-item">
                <div class="media">-->
+                 
               <a href="maxtemp.html"><img class="img-responsive"  src="Resources/Latitude vs Max Temperature 8-25-20.png" alt="Max Temperature" style="width:100%;"></a>
                <!--</div>
             </li></ul> -->
               
       
-              <h3 style="font-family:'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif; 
-          font-weight: bolder; font-size: 16px; color: #6c757d; margin-left: 2pc;margin-right: 2pc;font-size:100%">Humidity</h3>
+              <p style="font-family:'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif; 
+          font-weight: bolder; color: #6c757d; margin-left: 2pc;margin-right: 0pc;font-size:100%">Humidity</p>
 
               <!-- <ul class="nav nav-pills flex-column"style="margin-bottom: 0.5pc;"><li class="nav-item"><div class="media"> -->
                 <a href="humidity.html"><img class="img-responsive"  src="Resources/Latitude vs Humidity 8-25-20.png"alt="Humidity" style="width:100%;"></a>
@@ -105,15 +106,15 @@
             <!-- </div>
 
               <div class="row" style="margin-left: 2pc; margin-bottom: 2pc;"> -->
-                <h3 style="font-family:'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif; 
-                font-weight: bolder; font-size: 16px; color: #6c757d; margin-left: 2pc;margin-right: 2pc;font-size:100%">Cloudiness</h3>
+                <p style="font-family:'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif; 
+                font-weight: bolder;  color: #6c757d; margin-left: 2pc;margin-right: 0pc;font-size:100%">Cloudiness</p>
 
               <!-- <ul class="nav nav-pills flex-column"style="margin-bottom: 0.5pc;"><li class="nav-item"><div class="media"> -->
                 <a href="cloudiness.html"><img class="img-responsive" src="Resources/Cloudiness 8-25-20.png" alt="Resources"style="width:100%;"></a>
               <!-- </div></li></ul> -->
               
-              <h3 style="font-family:'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif; 
-              font-weight: bolder; font-size: 16px; color: #6c757d; margin-left: 2pc;margin-right: 2pc;font-size:100%">Windspeed</h3>
+              <p style="font-family:'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif; 
+              font-weight: bolder; color: #6c757d; margin-left: 2pc;margin-right: 0pc;font-size:100%">Windspeed</p>
 
               <!-- <ul class="nav nav-pills flex-column" style="margin-bottom: 0.5pc;"><li class="nav-item"> -->
                 <!-- <div class="col-5"> -->
@@ -145,11 +146,16 @@
             This is to demonstrate capability in performing an API calls with Python. Next, by using Python Pandas library compiling those datas into csv files and pandas dataframes for easier processing.
         Third step, using matplotlib library, creating several graphs for more intuitive visual analysis. The graphics on this site is the results of that step. </p>
         <p style="font-family:'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif; font-size: 16px; text-align: justify;">
-            Original Weather Data came from <a href="https://openweathermap.org/api">Open Weather API </a> accessed on 8/25/20.<br>
-            <br>
             The accessibility of this API is lmited to a certain point, the current datetime when it was called. Past data is behind a paywall in which this student is unwilling to pay.
             Furthermore, if an API call bring over 60 results in one minute, it would locked the user until a lengthy period is passed, which this student is unwilling to wait since time is a scarce resource.
-            These dataset is used for at least three projects, to maintain consistency, only the data of that date is used.
+            These dataset is used for at least three projects, to maintain consistency, only the data a single date is used.
+            <br>
+            <br>
+            Original Weather Data came from <a href="https://openweathermap.org/api">Open Weather API </a> accessed on 8/25/20.The image of the two people in the rain came from Wikimedia Commons. 
+            I put because it look good, it is free and tell the overall story better than my graphs. The artist who made this Tomas Castelazo. © Tomas Castelazo, www.tomascastelazo.com/ Wikimedia Commons/ CC BY-SA 3.0 . 
+            I am not paid by or pay OpenWeatherAPI or the artist and greatly grateful for their generousity.
+            
+            
           
           </p>
         </div>
@@ -173,16 +179,17 @@
   <div class="card-header">Keywords</div>
   <div class="card-body">
     <h3 style="font-family:'Segoe UI'; 
-    font-size: 24px; color: rgb(107, 100, 211); margin-left: 2pc;" class="card-title">Latitude</h3>
-    <p class="card-text"style="font-family:'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif; font-size: 16px;">The latitude of the Earth is the <B style="font-family:'Segoe UI'; 
+    font-size: 24px; color: rgb(107, 100, 211); margin-left: 2pc;text-align: justify;" class="card-title">Latitude</h3>
+    <p class="card-text"style="font-family:'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif; font-size: 75%;">The latitude of the Earth is the <B style="font-family:'Segoe UI'; 
       font-size: 16px; color: rgb(107, 100, 211);">location</B> of the cities determined by the distance north or south of the equator. It is <B style="font-family:'Segoe UI'; 
       font-size: 16px; color: rgb(107, 100, 211);">measured in degrees.</B> </p>
   </div>
   <div class="card-body">
-    <h5 class="card-title">References</h5>
+    <h5 class="card-title"></h5>
     <p class="card-text"></p>
   </div>
 </div>
+</div> 
 </div> 
 </div> 
 
@@ -195,6 +202,12 @@
       </p>  
       </div>
     </footer>  -->
+<footer>
+      <p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 11px;text-align: right;margin-right: 5rem;">
+        Author of this web page: Chanrith "Hong" Leatheng.  <br>
+      </p>  
+</footer> 
+
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
