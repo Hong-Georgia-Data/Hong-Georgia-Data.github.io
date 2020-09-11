@@ -17,9 +17,6 @@ body {
 
 
 
-@media only screen and (max-width: 992px) {
-#sider {
-  display: none;}}
 
 .container:hover .overlay {
   opacity: 1;
@@ -61,10 +58,10 @@ $container-max-widths: (
   .sidenav a:hover, .dropdown-btn:hover {
     color: #f1f1f1;
   }
-  .vertical-menu a{
+  /* .vertical-menu a{
    margin-left: 1pc;
    margin-right: 1pc;
-  }
+  } */
 
   .vertical-menu a{
     background-color: #eee; /* Grey background color */
@@ -76,8 +73,8 @@ $container-max-widths: (
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    margin-left: 1pc;
-    margin-right: 1pc;
+    /* margin-left: 1pc;
+    margin-right: 1pc; */
   }
 
   
@@ -96,19 +93,13 @@ $container-max-widths: (
     flex-flow: row wrap;
     align-items: stretch;
   }
-  .vertical-menu p{
-    position: relative;
-    width: 100%;
-    min-width: 20%;
-    max-width: 100%;
 
-    /* min-height: 1px; */
 
-  }
+
   .vertical-menu {
     position: relative;
     width: 100%;
-    min-width: 20%;
+    min-width: 50%;
     max-width: 100%;
 
     /* min-height: 1px; */
@@ -127,22 +118,37 @@ $container-max-widths: (
     max-height: 2px;
 
   }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 900px) {
     #disp {
-      display: -ms-flexbox; 
-      display:flex-direction: row-reverse;}}
-@media only screen and (max-width: 1200px) {
-        .vertical-menu {
-          display: -ms-flexbox;
-          display:flex-direction: row-reverse;
+      display: none}      }
+
+@media only screen and (max-width: 720px) {
+        .vertical-menu { display: none; 
         }
       }
+@media only screen and (max-width: 1140px) {
+        .vertical-menu { margin-bottom: 0pc; 
+        }
+      }
+      
 @media only screen and (max-width: 720px) {
         #bio-image {
           display: none;
         }
       }
+
+@media only screen and (max-width: 1140px) {
+        #card-contents {
+          display: none;        
+
+        }
+      }
       
+
+@media only screen and (max-width: 900px) {
+        #sider {
+          display: none;}}
+
 
       /* @media only screen and (max-width: 1200px) {
         #disp {
