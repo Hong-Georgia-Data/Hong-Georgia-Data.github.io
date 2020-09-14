@@ -125,7 +125,7 @@ $container-max-widths: (
 @media only screen and (max-width: 720px) {
         .vertical-menu { display: none; 
         }
-      }
+      } 
 @media only screen and (max-width: 1140px) {
         .vertical-menu { margin-bottom: 0pc; 
         }
@@ -135,15 +135,18 @@ $container-max-widths: (
         #bio-image {
           display: none;
         }
-      }
+      } 
 
 @media only screen and (max-width: 1140px) {
         #card-contents {
           display: none;        
 
         }
-      }
+      } 
       
+@media only screen and (min-width: 900px) {
+        #show-later {
+          display: none;}}
 
 @media only screen and (max-width: 900px) {
         #sider {

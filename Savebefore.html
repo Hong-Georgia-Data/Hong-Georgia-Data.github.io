@@ -67,32 +67,46 @@
 
 
 <!-- Visualization Side Bar -->
+<div id="show-later" class="row" style="margin-left: 2pc;margin-right: 2pc">
+  <div class="col-3">
+  <a href="maxtemp.html" data-toggle="tooltip" title="Latitudes and MaxTemp"><img class="img-responsive"  src="Resources/Latitude vs Max Temperature 8-25-20.png" alt="Max Temperature" style="width:100%;"></a>
+  </div>
+  <div class="col-3">
+  <a href="humidity.html" data-toggle="tooltip" title="Latitudes and Humidity"><img class="img-responsive"  src="Resources/Latitude vs Humidity 8-25-20.png"alt="Humidity" style="width:100%;"></a>
+  </div>
+  <div class="col-3">
+  <a href="cloudiness.html"data-toggle="tooltip" title="Latitudes and Cloudiness"><img class="img-responsive"  src="Resources/Cloudiness 8-25-20.png" alt="Resources"style="width:100%;"></a>
+  </div>
+  <div class="col-3">
+  <a href="windspeed.html" data-toggle="tooltip" title="Latitudes and Windspeed"><img class="img-responsive"  src="Resources/Windspeed 8-25-20.png"alt="Windspeed" style="width:100%;"></a>
+  </div>
+</div>
+<!-- Visualization Side Bar -->
+<!-- The Middle Part -->
+
+
 <div class="row" style ='margin-left: 2pc;margin-right: 2pc'>
-  
+
 <div class="col-12 col-md-10">
 <div class="row">
   
 
-  <div  class="col-md-2 " >
+  <div  class="col-md-2" >
     <!-- .ml-sm-auto -->
     <br>    <br>    
     <div id='disp' class="row" >  
 
-        <div class="card bg-light mb-3" style="max-width: 18rem;">
-            <div id='card-contents' class="card-header"><a href="visualizations.html" class="card-link"><h3 style="font-family:'Segoe UI'; 
-                font-size: 24px; color: rgb(107, 100, 211); text-align: justify;margin-left: auto;">CONTENTS</h3></a></div>
+        <div class="card bg-light mb-3" style="max-width: 18rem; margin-bottom: 0pc;" data-toggle="tooltip" title="Main Contents">
+            <!-- <div id='card-contents' class="card-header"><a href="visualizations.html" class="card-link"><h3 style="font-family:'Segoe UI'; 
+                font-size: 24px; color: rgb(107, 100, 211); text-align: justify;margin-left: auto;">CONTENTS</h3></a></div> -->
 
-            <div class="card-body">
-                
-
-              <!-- <h3 style="font-family:'Segoe UI'; 
-              color: rgb(107, 100, 211); margin-left: 2pc;margin-right: 0pc;font-size:24px; justify-self:start;"><br>CONTENTS</h3> -->
-               <div class="vertical-menu" style="margin-bottom: 2pc;">
+            <div class="card-body" style='margin-bottom: 0pc;'>
+               <div class="vertical-menu " style="margin-bottom: 0pc;">
                 <a href="maxtemp.html" data-toggle="tooltip" title="Latitudes and MaxTemp"><img class="img-responsive"  src="Resources/Latitude vs Max Temperature 8-25-20.png" alt="Max Temperature" style="width:100%;"></a>
                 <a href="humidity.html" data-toggle="tooltip" title="Latitudes and Humidity"><img class="img-responsive"  src="Resources/Latitude vs Humidity 8-25-20.png"alt="Humidity" style="width:100%;"></a>
                 <a href="cloudiness.html"data-toggle="tooltip" title="Latitudes and Cloudiness"><img class="img-responsive"  src="Resources/Cloudiness 8-25-20.png" alt="Resources"style="width:100%;"></a>
-                <a href="Windspeed.html" data-toggle="tooltip" title="Latitudes and Windspeed"><img class="img-responsive"  src="Resources/Windspeed 8-25-20.png"alt="Windspeed" style="width:100%;"></a>
-        
+                <a href="windspeed.html" data-toggle="tooltip" title="Latitudes and Windspeed"><img class="img-responsive"  src="Resources/Windspeed 8-25-20.png"alt="Windspeed" style="width:100%;"></a>
+              </div>
         
         
               
@@ -101,9 +115,8 @@
             </div>
           </div>
         </div>
-    </div>
 
-  <div class="col-md-10">
+  <div class="col-12 col-md-10">
     <main class="container">
       
           <h2 style="font-family:'Segoe UI'
@@ -135,13 +148,9 @@
           
           </p>
         </div>
-      </main>
-    </div>
-    
-  <!-- </div> -->
+      </main>        </div>        </div>       </div> 
 
-</div>
-</div>
+
 
 <div class="col-12 col-md-2">
   <br><br>
@@ -160,14 +169,12 @@
       font-size: 16px; color: rgb(107, 100, 211);">location</B> of the cities determined by the distance north or south of the equator. It is <B style="font-family:'Segoe UI'; 
       font-size: 16px; color: rgb(107, 100, 211);">measured in degrees.</B> </p>
   </div>
-  <div class="card-body">
-    <h5 class="card-title"></h5>
-    <p class="card-text"></p>
-  </div>
+
 </div>
 </div> 
 </div> 
 </div> 
+
 <!-- 
     <footer>
       <div class="col-sm-9 sm-auto">
@@ -177,7 +184,8 @@
       </p>  
       </div>
     </footer>  -->
-    <footer>
+
+<footer>
       <p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 11px;text-align: right;margin-right: 5rem;">
         Author of this web page: Chanrith "Hong" Leatheng.  <br>
       </p>  
