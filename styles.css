@@ -167,7 +167,19 @@ $container-max-widths: (
             display: none;
         }
     } */
-
+  .wrapper {
+      min-height: 100%;
+      height: auto ;
+      height: 100%;
+      margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+  }
+/* .footer, .push {
+      height: 142px;position: relative; .push must be the same height as .footer */
+  /* } */
+.npr-footer {
+    clear: both;
+    position: relative;}
+    
 
 /* Here we define some styles that will ONLY be applied at screen sizes below 600 pixels */
 /* @media (max-width: 600px) { */
